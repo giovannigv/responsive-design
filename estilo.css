@@ -2,15 +2,16 @@ body{
 	background:url(imagens/background.jpg); /*inserção da imagem de fundo em todo o site*/
 	color:#868686; /*cor padrão para todas as fontes*/
 	font-family: "Open Sans", Helvetica, sans-serif, arial; /*definição da fonte geral incorporada do Google Fonts*/
-	font-size: 18px; /*tamanho da fonte*/
+	font-size: 1.125em;/*18px; tamanho da fonte*/
 	font-weight: 300; /*indica que a fonte está configurada como Open Sans Light*/
-	line-height: 22px;/*altura da linha*/
+	line-height: 1.222222222em;/*22;altura da linha*/
 	text-align: left; /*alinhando o texto à esquerda*/
 	text-shadow:1px 1px 0px #fff; /*sombreamento para as fontes do site*/
 }
 .center{
 	margin: 0 auto; /*centralizando o conteúdo no navegador*/
-	width: 1200px; /*largura do layout*/		
+	max-height: 1200px;
+	width: 90%;/*largura do layout*/		
 }
 /*.clearfix usado para adicionar um espaço vazio antes e depois dos elementos
   evitando que os floats se aglomerem.
@@ -23,7 +24,7 @@ body{
     clear: both;
 }
 .clearfix {
-    *zoom: 1;
+    zoom: 1;
 }
 /*fim do clearfix*/
 img, picture, video, embed {
@@ -31,20 +32,20 @@ img, picture, video, embed {
 }
 h1, h2{
 	color:#FE9380;
-	font-size: 60px;
+	font-size: 7.5em;/*60px;*/
 	font-weight: 800;
-	letter-spacing: -3px; /*espaçamento entre as letras*/
-	line-height: 60px;
+	letter-spacing:-0.166666667em;/* -3px; espaçamento entre as letras*/
+	line-height: 7.5em;
 }
 h3{
-	font-size: 32px;
+	font-size: 1.77777778em;/*32px;*/
 	font-weight: 300;
-	letter-spacing: -2px; /*espaçamento entre as letras*/
-	line-height: 38px;
+	letter-spacing: -0.1111111em;/*-2px; espaçamento entre as letras*/
+	line-height: 2.1111111em;/*38px;*/
 }
 p{
 	font-weight: 300;/*modifica a força da fonte para light*/
-	letter-spacing: -1px; /*espaçamento entre as letras*/
+	letter-spacing: -0.05555556em;/*-1px; espaçamento entre as letras*/
 }
 a, a:link, a:visited{
 	color:#FE9380; /*cor dos links*/
@@ -58,9 +59,9 @@ a:hover{
 }
 
 header{
-	border-bottom: 1px solid #E0E0E0; /*borda na base da seção*/
+	border-bottom: -0.05555556em solid #E0E0E0; /*borda na base da seção*/
 	height:150px;
-	width:1200px; /*largura do topo*/
+	width:100%/*1200px; largura do topo*/
 }
 /*
 =========================
@@ -73,7 +74,7 @@ header h1 a{
 		float:left; /*posiciona o logotipo à esquerda do site*/
 		height:139px; /*altura da imagem*/
 		text-indent:-9999; /*recuo para ocultar texto à esquerda*/
-		width:302px; /*largura da imagem*/
+		width:25.166667%/*302px; largura da imagem*/
 	}
 	
 /*
@@ -86,7 +87,7 @@ nav{
 	float:right; /*posiciona menu à direita*/
 	margin-top:78px; /*distância do menu à margem superior do navegador*/
 	text-align:right; /*alinha os links à direita*/
-	width:520px;
+	width:43.3333333%;/*520px;*/
 }
 nav ul{
 	list-style-type:none; /*retira os marcadores da lista*/
@@ -95,17 +96,18 @@ nav ul{
 		display: inline; /*deixa o menu na horizontal*/
 	}
 		nav ul li a{
-			margin-right: 30px; /*espaço à direita de cada link do menu*/
+			margin-right: 1.66666667em;/*30px; espaço à direita de cada link do menu*/
 		}
 		nav ul li:nth-child(5) a{
 			margin-right:0px; /*indica que o 5º elemento da lista (contato) terá a margem direita zerada*/
 		}
 nav a:link, nav a:visited{
 	color:#999;
-	font-size: 22px;
+	font-size: 1.2222222em;/*22px;*/
 	font-weight: 300;
-	letter-spacing: -2px; /*espaçamento entre as letras*/
-	line-height: 26px;
+	letter-spacing:-0.11111111em;/*-2px; espaçamento entre as letras*/
+	line-height:1.444444444em; /*26px*/
+	 ; 
 	display:inline-block;
 }
 nav a.ativo, nav a:hover{
@@ -119,7 +121,7 @@ Seção .CHAMADA ========================================
 .chamada{
 	height:290px;
 	text-align:center;
-	width:1200px;
+	width:100%/*1200px;*/
 }
 	h2 span{
 		font-size: 60px;
@@ -129,7 +131,7 @@ Seção .CHAMADA ========================================
 	}
 	.chamada h3 {
 		margin: 0 auto;
-		width:900px;
+		width:75%;/*900px;*/
 	}
 	
 /*----------------------------------------------------------
@@ -138,17 +140,17 @@ Seção .CONTAINER - Conteúdo com 3 colunas =============
 .container{
 	background-color:#FE9481;
 	height: 417px;
-	padding:30px;
-	max-width:1200px;
+	padding:2.5%;/*30px;*/
+	max-width:100%;/*1200px;*/
 }
 .desktop, .tablet, .mobile{
 	float:left;
 	position:relative;
 	text-align:center;
-	width:360px;
+	width:30%¨;/*360px;*/
 }
 .desktop, .tablet{
-	margin-right: 30px;
+	margin-right:2.5% /*30px;*/
 }
 .mobile{
 	background-color:#9C8CB9;
@@ -163,8 +165,8 @@ Seção .CONTAINER - Conteúdo com 3 colunas =============
 
 /*imagens*/
 .container .desktop figure, .container .tablet figure, .container .mobile figure {
-	margin: 15px auto 0px auto; 
-	width: 250px;
+	margin: 1.75% auto 0px auto;/*15px auto 0px auto;*/
+	width: 20.8333333%/*250px;*/
 }
 
 /*
@@ -174,9 +176,9 @@ formatação do texto
 */
 .container h3{
 	color:#fff;
-	font-size: 32px;
+	font-size: 1.7777777778em;/*32px;*/
 	font-weight: 300;
-	letter-spacing: -2px;
+	letter-spacing: -0.11111111em;/*-2px;*/
 	margin-bottom: 30px;
 	text-shadow:none;
 }
